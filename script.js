@@ -21,6 +21,34 @@ document.addEventListener('DOMContentLoaded', () => {
       hideModal();
     }
   });
+
+  // Handle subscription form submission
+  const subscribeForm = document.getElementById('subscribe-form');
+  if (subscribeForm) {
+    subscribeForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = subscribeForm.elements['name'].value;
+      const email = subscribeForm.elements['email'].value;
+      // Send a mailto link to the designated email with form details
+      const mailtoLink = `mailto:info@mabaistrategies.com?subject=${encodeURIComponent('Mindsphere Newsletter Signup')}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email)}`;
+      window.location.href = mailtoLink;
+    });
+  }
+
+  // Handle client inquiry form submission
+  const clientForm = document.getElementById('client-form');
+  if (clientForm) {
+    clientForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = clientForm.elements['name'].value;
+      const company = clientForm.elements['company'].value;
+      const email = clientForm.elements['email'].value;
+      const details = clientForm.elements['details'].value;
+      const body = `Name: ${name}\nCompany: ${company}\nEmail: ${email}\nDetails: ${details}`;
+      const mailtoLink = `mailto:info@mabaistrategies.com?subject=${encodeURIComponent('Mindsphere Client Inquiry')}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    });
+  }
 });
 
 function buildNewsletter(data) {

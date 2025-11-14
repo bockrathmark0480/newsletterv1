@@ -185,3 +185,48 @@ body {
 .actions h3 {
   margin-top: 0;
 }
+
+/* Forms for subscribing and client inquiries */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-top: 12px;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 10px;
+  border: 1px solid #2d335c;
+  border-radius: 4px;
+  background-color: #11162f;
+  color: #f4f5fa;
+  font-size: 1rem;
+}
+
+.signup-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.signup-form button {
+  background-color: #52b7ff;
+  color: #0a0d1a;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.signup-form button:hover {
+  background-color: #7bdcb5;
+}
+
+.form-note {
+  font-size: 0.75rem;
+  color: #8f94b6;
+  margin-top: 6px;
+}

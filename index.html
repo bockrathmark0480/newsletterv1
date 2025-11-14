@@ -31,5 +31,30 @@
     </div>
 
     <script src="script.js"></script>
+
+    <!-- Subscription and Client Forms -->
+    <!-- These sections allow visitors to subscribe to the Mindsphere newsletter or inquire about becoming a client.  -->
+    <!-- For production, replace the mailto handlers in script.js with your Sender embed code or custom backend endpoint. -->
+    <section id="subscribe-section" class="section">
+        <h2>Subscribe to the Mindsphere Newsletter</h2>
+        <form id="subscribe-form" class="signup-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-note">We’ll use your email only to send you the newsletter. For advanced integration, replace this form with the embed code from your email marketing provider.</p>
+    </section>
+
+    <section id="client-section" class="section">
+        <h2>Become a Mindsphere Client</h2>
+        <form id="client-form" class="signup-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="text" name="company" placeholder="Your Company" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="details" placeholder="Tell us about your needs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p class="form-note">Your message will be sent to our team. We’ll reach out to discuss how Mindsphere can help your business. Replace this form handler with a CRM or Google Form integration as needed.</p>
+    </section>
 </body>
 </html>
