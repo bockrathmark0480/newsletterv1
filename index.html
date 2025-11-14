@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The MAB Mindsphere Newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Banner / Masthead -->
+    <header class="banner">
+        <!-- Use the provided newsletter banner image as the top masthead -->
+        <img src="newsletter banner.jpg" alt="The MAB Mindsphere banner" class="banner-img" />
+    </header>
+
+    <!-- Main content container -->
+    <main id="content" class="container">
+        <!-- Dynamic content will be injected here by script.js -->
+    </main>
+
+    <!-- Modal for displaying long‑form articles -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="close">&times;</button>
+            <h2 id="modal-title"></h2>
+            <div id="modal-meta" class="modal-meta"></div>
+            <div id="modal-body" class="modal-body"></div>
+            <div id="modal-predictive" class="modal-predictive"></div>
+            <div id="modal-sources" class="modal-sources"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

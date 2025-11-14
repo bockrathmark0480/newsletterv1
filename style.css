@@ -1,0 +1,187 @@
+/* Basic reset and theme variables */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0d1a;
+  color: #f4f5fa;
+  line-height: 1.5;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Main container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section headings */
+.section {
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  color: #7bdcb5;
+}
+
+/* Card list for signals */
+.signal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signal-card {
+  background-color: #1c2140;
+  border: 1px solid #2d335c;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.signal-card:hover {
+  background-color: #273060;
+}
+
+.signal-title {
+  font-size: 1.2rem;
+  color: #52b7ff;
+  margin: 0 0 4px;
+  text-decoration: underline;
+}
+
+.signal-summary {
+  font-size: 0.9rem;
+  color: #ccd1ed;
+}
+
+.signal-meta {
+  font-size: 0.75rem;
+  color: #8f94b6;
+  margin-top: 6px;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #11162f;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: #7bdcb5;
+}
+
+.modal-meta,
+.modal-predictive,
+.modal-sources {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #a0a8cc;
+}
+
+.modal-body p {
+  margin-bottom: 12px;
+}
+
+/* Scoreboard table */
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.scoreboard-table th,
+.scoreboard-table td {
+  border: 1px solid #2d335c;
+  padding: 6px 8px;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.scoreboard-table th {
+  background-color: #1c2140;
+}
+
+/* Playbook list */
+.playbook {
+  background-color: #1c2140;
+  border: 1px solid #2d335c;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.playbook h4 {
+  margin: 0 0 6px;
+  color: #52b7ff;
+}
+
+.playbook ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.actions {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #1c2140;
+  border-radius: 8px;
+}
+
+.actions h3 {
+  margin-top: 0;
+}
